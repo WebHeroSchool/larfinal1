@@ -7,15 +7,17 @@
 <body>
   <header class="header">
     <div class="nav">
-      <a class="nav__link" href='#'><span>LOCO</span></a> 
+      <a class="nav__link" href='#'>LOCO</a> 
       <select class="language">
         <option>RU</option>
         <option>EN</option>
       </select>
     </div>
-    <div class="hamburger-menu">
-      <input id="menu__toggle" type="checkbox"/>
-      <label class="menu__btn" for="menu__toggle"></label>
+    <div class="header__menu">
+      <div class="header__burger">
+        <input id="menu__toggle" type="checkbox"/>
+        <label class="menu__btn" for="menu__toggle"></label>
+      </div>
     </div>
   </header>
 <main>
@@ -25,28 +27,28 @@
       <p>Бесплатная доставка включена. Предложение действует на сайте loco.com и в магазинах до 18.09.2018. Для получения скидки в магазинах предъявите скриншот данного предложения. В магазинах предложение не суммируется с другими акциями, предложениями и распродажей.</p>
     </div>
     <div class="section__next">
-      <a class="section__next" href='#'>ЧИТАТЬ ДАЛЬШЕ</a> 
-      <a class="section__next" href='#'>ДРУГИЕ ПРЕДЛОЖЕНИЯ</a> 
-      <a class="section__next" href='#'>&rarr;</a>
+      <a href='#'>ЧИТАТЬ ДАЛЬШЕ</a> 
+      <a href='#'>ДРУГИЕ ПРЕДЛОЖЕНИЯ</a> 
+      <a href='#'>&rarr;</a>
     </div> 
   </section>
 </main> 
     <div class="social">
-      <a class="social__link" href='#'><img src="images/inst.png" alt="instagram"></a>
-      <a class="social__link" href='#'><img src="images/vk.png" alt="vkontakte"></a>
-      <a class="social__link" href='#'><img src="images/fb.png" alt="facebook"></a>
+      <a href='#'><img src="./images/inst.png" alt="instagram"></a>
+      <a href='#'><img src="./images/vk.png" alt="vkontakte"></a>
+      <a href='#'><img src="./images/fb.png" alt="facebook"></a>
     </div>
     <div class="card">
-      <img class="front" src="images/girl.png" alt="girl&bag">
-      <img class="back" src="images/rectangle5.png" alt="background-black-left">
-      <img class="back" src="images/scrooll.png" alt="scroll">
+      <img class="front" src="./images/girl.png" alt="girl-bag">
+      <img class="back" src="./images/rectangle5.png" alt="background-black">
+      <img class="back" src="./images/scrooll.png" alt="scroll">
     </div>
   <section class="items">
     <div class="items__goods">
       <div class="card">
-        <img class="front" src="images/clutchfront.png" alt="pink-bag">
-        <img class="back" src="images/clutchback.png" alt="gray-bag">
-        <img class="back" src="images/pinkbg.png" alt="backrnd-pink">
+        <img class="front" src="./images/clutchfront.png" alt="pink-bag">
+        <img class="back" src="./images/clutchback.png" alt="gray-bag">
+        <img class="back" src="./images/pinkbg.png" alt="backrnd-pink">
       </div>
     </div>
     <div class="items__goods-text">
@@ -55,17 +57,42 @@
       <p class="items__text description">Бесплатная доставка включена. Предложение действует на сайте loco.com и в магазинах до 18.09.2018. Для получения скидки в магазинах предъявите скриншот данного предложения. В магазинах предложение не суммируется с другими акциями, предложениями и распродажей.</p>
     </div>
     <div class="items__buttons">
-      <div class="items__buttons-colors">
-      <button class="items__colors items__colors_gray"></button>
-      <button class="items__colors items__colors_pink"></button>
-      <button class="items__colors items__colors_blue"></button>
-      <button class="items__colors items__colors_green"></button>
-      </div>
+      <button class="items__button items__button_gray"></button>
+      <button class="items__button items__button_pink"></button>
+      <button class="items__button items__button_blue"></button>
+      <button class="items__button items__button_green"></button>
     </div>
     <span class="items__price">
-      <img src="images/1990.png" alt="price">
+      <img src="./images/1990.png" alt="price">
     </span>
-    <div class="quantity_inner">        
+    <div class="items__quantity">
+      <button class="minus">
+        <svg viewBox="0 0 24 24"><line x1="5" y1="12" x2="19" y2="12"></line></svg>
+      </button>
+        <input type="text" value="1" size="2" class="quantity" data-max-count="20" />
+      <button class="plus">
+        <svg viewBox="0 0 24 24"><line x1="12" y1="5" x2="12" y2="19"></line><line x1="5" y1="12" x2="19" y2="12"></line></svg>
+      </button>
+    </div>
+      <button class="items__basket">ДОБАВИТЬ В КОРЗИНУ</button>
+    <div class="items__next">
+      <a href='#'>ДРУГИЕ ПРЕДЛОЖЕНИЯ</a>
+    </div>
+    <span class="items__arrow">
+      <a href="#"><img src="./images/arrow.png" alt="arrow-long"></a>
+    </span>
+  </section>
+  <section class="look">
+    <div class="look__collection">
+      <img class="look__img" src="./images/autumn.png" alt="things-set">
+    </div>
+    <div class="look__wrap-text">
+      <h1 class="look__title">Serene Total Look</h1>
+      <h5 class="look__subtitle">ОСЕННЯЯ КОЛЛЕКЦИЯ</h5>
+      <p>Джинсы, свитер, обувь.</p>
+      <p>В комплект также входит пакет ароматного чая и кружка.</p>
+    </div>
+    <div class="look__quantity">
       <button class="bt_minus">
         <svg viewBox="0 0 24 24"><line x1="5" y1="12" x2="19" y2="12"></line></svg>
       </button>
@@ -73,53 +100,21 @@
       <button class="bt_plus">
         <svg viewBox="0 0 24 24"><line x1="12" y1="5" x2="12" y2="19"></line><line x1="5" y1="12" x2="19" y2="12"></line></svg>
       </button>
-    <button class="items__basket">ДОБАВИТЬ В КОРЗИНУ</button>
-    </div>
-    <div class="items__next">
-      <a class="items__next" href='#'>ДРУГИЕ ПРЕДЛОЖЕНИЯ</a>
-      <span class="items__arrow">
-      <a href="arrow.png"><img src="images/arrow.png" alt="arrow-long"></a>
-      </span>
-    </div>
-  </section>
-  <section class="look">
-    <div class="look__collection">
-      <div class="look__wrap">
-        <div class="look__wrap-img">
-          <img class="look__img" src="images/autumn.png" alt="things-set">
-        </div>
-      </div>
-    </div>
-    <div class="look__wrap-text">
-      <h1 class="look__title">Serene Total Look</h1>
-      <h5 class="look__subtitle">ОСЕННЯЯ КОЛЛЕКЦИЯ</h5>
-      <p class="look__description">Джинсы, свитер, обувь.</p>
-      <p class="look__description">В комплект также входит пакет ароматного чая и кружка.</p>
-    </div>
-    <div class="quantity_inner">        
-      <button class="bt_minus">
-        <svg viewBox="0 0 24 24"><line x1="5" y1="12" x2="19" y2="12"></line></svg>
-      </button>
-        <input type="text" value="1" size="2" class="quantity" data-max-count="20" />
-      <button class="bt_plus">
-         <svg viewBox="0 0 24 24"><line x1="12" y1="5" x2="12" y2="19"></line><line x1="5" y1="12" x2="19" y2="12"></line></svg>
-      </button>
-        <button class="look__basket">ДОБАВИТЬ В КОРЗИНУ
-      </button>
+      <button class="look__basket">ДОБАВИТЬ В КОРЗИНУ</button>
     </div>
     <div class="look__next">
-      <a class="look__next" href='#'>ДРУГИЕ ТОВАРЫ НА LOCO.COM</a>
+      <a href='#'>ДРУГИЕ ТОВАРЫ НА LOCO.COM</a>
     </div>
     <span class="look__arrow">
-       <a href="arrow3.png"><img src="images/arrow3.png" alt="arrow-last"></a>
+      <a href="#"><img src="./images/arrow3.png" alt="arrow-last"></a>
     </span>
     <div class="look__card">
-      <img class="back" src="images/Rectangle3.png" alt="back-line-black">
+      <img class="back" src="./images/Rectangle3.png" alt="back-line-black">
     </div>
   </section>
 <footer class="footer">
   <p class="footer__text">РАЗРАБОТАНО В</p>
-  <img class="footer__img" src="images/webhero.png" alt="logo-whs">
+  <img class="footer__img" src="./images/webhero.png" alt="logo-whs">
 </footer>
 </body>
 </html>
