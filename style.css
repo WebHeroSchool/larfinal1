@@ -2,6 +2,8 @@ body {
   font-family: 'Montserratmedium', 'Montserratbold', 'Montserratnormal', sans-serif;
   margin: 0;
   padding: 0;
+  max-width: 1440px;
+  /*display: flex;*/
 } 
 
 .header {
@@ -22,6 +24,7 @@ body {
   text-align: center;
   letter-spacing: 0.07em;
   color: #FFFFFF;
+  text-decoration: none;
 }
 
 .language {
@@ -104,6 +107,16 @@ body {
   transform: rotate(140deg);
 }
 
+#menu__square {
+position: absolute;
+width: 92px;
+height: 92px;
+left: 1348px;
+top: 0px;
+background: #000000;
+opacity: 0.05;
+}
+
 .section {
   position: absolute;
   align-items: center;
@@ -123,7 +136,6 @@ body {
   line-height: 82px;
   color: #000000;
   margin: -17px 0 18px 0px;
-  
 }
 
 .section__description {
@@ -137,8 +149,8 @@ body {
   font-weight: normal;
   font-size: 15px;
   line-height: 21px;
+  color: black;
   margin: -26px 0 18px 0px;
-  color: #000000;
 }
 
 .section__next {
@@ -161,10 +173,12 @@ body {
   width: 203px;
   height: 44px;
   left: 786px;
-  top: 590px;
+  top: 591px;
   border: 1.5px solid #000000;
   box-sizing: border-box;
   text-align: center;
+  cursor: pointer;
+  color: black;
 }
 
 .section__other {
@@ -419,20 +433,6 @@ body {
   opacity: 0.5;
 }
 
-p {
-  width: 368px;
-  height: 101px;
-  left: 867px;
-  top: 2199px;
-  font-family: Montserratregular, sans-serif;
-  font-style: normal;
-  font-weight: normal;
-  font-size: 15px;
-  line-height: 21px;
-  color: #000000;
-  opacity: 0.5;
-}
-
 .look__basket {
   width: 163px;
   height: 0px;
@@ -471,3 +471,21 @@ p {
   line-height: 15px;
   color: #000000;
 }
+
+/*@media (min-width: 1920px){
+    body{
+        display: flex;
+    }
+}*/
+
+/*@media (min-width: 768px){
+    body{
+        display: flex;
+    }
+}*/
+
+/*@media (min-width: 375px){
+    body{
+        display: flex;
+    }
+}*/
