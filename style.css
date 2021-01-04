@@ -1,8 +1,20 @@
 body {
-  font-family: 'Montserratmedium', 'Montserratbold', 'Montserratnormal', sans-serif;	
+  font-family: 'Montserratmedium', 'Montserratbold', 'Montserratnormal', sans-serif;
+  margin: 0;
+  padding: 0;
+  max-width: 1440px;
+} 
+
+.header {
+  display: flex;
+}
+
+.main {
+  display: flex;
 }
 
 .nav__link {
+  position: absolute;
   width: 98px;
   height: 37px;
   left: 52px;
@@ -15,9 +27,12 @@ body {
   text-align: center;
   letter-spacing: 0.07em;
   color: #FFFFFF;
+  text-decoration: none;
 }
 
 .language {
+  position: relative;
+  cursor: pointer;
   width: 31px;
   height: 25px;
   left: 388px;
@@ -31,7 +46,73 @@ body {
   color: #FFFFFF;
 }
 
+#menu__toggle {
+  opacity: 0;
+}
+
+.menu__btn {
+  align-items: center;
+  position: absolute;
+  top: 48px;
+  left: 1377px;
+  width: 37px;
+  height: 40px;
+  cursor: pointer;
+  z-index: 1;
+  padding: 0;
+  margin: 0;
+  border-radius: 10px;
+  outline: 10px;
+  transition: background 0.3s
+}
+
+.menu__btn > span::before,
+.menu__btn > span::after {
+  display: block;
+  position: absolute;
+  width: 90%;
+  height: 3px;
+  background-color: black;
+}
+
+.menu__btn > span::before {
+  content: '';
+  top: -8px;
+}
+
+.menu__btn > span::after {
+  content: '';
+  top: 1px;
+}
+
+#menu__toggle:checked ~ .menu__btn > span::before {
+  top: 0;
+  transform: rotate(45deg);
+}
+
+#menu__toggle:checked ~ .menu__btn > span::after {
+  top: 0;
+  transform: rotate(140deg);
+}
+
+#menu__square {
+  position: absolute;
+  width: 92px;
+  height: 92px;
+  left: 1348px;
+  top: 0px;
+  background: #000000;
+  opacity: 0.05;
+}
+
+.section {
+  position: absolute;
+  align-items: center;
+  z-index: 1;
+}
+
 .section__title { 
+  position: absolute;
   width: 475px;
   height: 164px;
   left: 789px;
@@ -42,9 +123,11 @@ body {
   font-size: 80px;
   line-height: 82px;
   color: #000000;
+  margin: -17px 0 18px 0px;
 }
 
 .section__description {
+  position: absolute;
   width: 467px;
   height: 127px;
   left: 789px;
@@ -54,35 +137,144 @@ body {
   font-weight: normal;
   font-size: 15px;
   line-height: 21px;
-  color: #000000;
+  color: black;
+  margin: -26px 0 18px 0px;
 }
 
-.section__link {
-  /*position: absolute;*/
-  width: 121px;
-  height: 0px;
-  left: 827px;
-  top: 630px;
+.section__next {
+  position: absolute;
   font-family: Montserratmedium, sans-serif;
   font-style: normal;
   font-weight: 500;
   font-size: 13px;
-  line-height: 0px;
-  color: #000000;
+  text-align: center;
+  line-height:44px;
 }
 
-.section__link {
-  /*position: absolute;*/
-  width: 172px;
-  height: 0px;
-  left: 1043px;
-  top: 629px;
-  font-family: Montserratmedium, sans-serif;
-  font-style: normal;
-  font-weight: 500;
-  font-size: 13px;
-  line-height: 0px;
-  color: #000000;
+.section__next:hover {
+  background: #f4f6f6;
+}
+
+.section__border {
+  text-decoration: none;
+  position: absolute;
+  width: 203px;
+  height: 44px;
+  left: 786px;
+  top: 591px;
+  border: 1.5px solid #000000;
+  box-sizing: border-box;
+  text-align: center;
+  cursor: pointer;
+  color: black;
+}
+
+.section__other {
+  text-decoration: none;
+  color: black;
+  cursor: pointer;
+  text-decoration: none;
+  position: absolute;
+  width: 203px;
+  height: 44px;
+  left: 1027px;
+  top: 590px;
+}
+
+.section__arrow {
+  text-decoration: none;
+  color: black;
+  cursor: pointer;
+  text-decoration: none;
+  position: absolute;
+  width: 203px;
+  height: 44px;
+  left: 1153px;
+  top: 592px;
+}
+
+.social {
+  display: flex;
+  align-items: center;
+}
+
+.social__link-inst {
+  position: relative;
+  margin-left: 52px;
+  margin-right: 12px;
+  width: 43px;
+  height: 43px;
+  top: 791px;
+  z-index: 1;
+}
+
+.social__link-vk {
+  position: relative;
+  margin-right: 12px;
+  width: 43px;
+  height: 43px;
+  top: 791px;
+  z-index: 1;
+}
+
+.social__link-fb {
+  position: relative;
+  width: 43px;
+  height: 43px;
+  top: 791px;
+  z-index: 1;
+}
+
+.scrol {
+  position: relative;
+  width: 308px;
+  height: 807px;
+  left: 425px;
+  top: -15px;
+  z-index: -1;
+}
+
+.girl {
+  position: absolute;
+  width: 549px;
+  height: 562px;
+  left: 186px;
+  top: 169px;
+  background: #C4C4C4;
+} 
+
+.rectangle {
+  position: absolute;
+  width: 461px;
+  height: 900px;
+  left: 0px;
+  top: 0px;
+  background: #000000;
+  z-index: -1;
+}
+
+.tick {
+  display: none; 
+}
+
+/*Здесь будет 2 секция, медиа->дальше в конце*/
+
+/*.card__frontbag {
+  position: relative;
+  top: 2000px;
+  height: 900px;
+}
+
+.card__backbag {
+  position: relative;
+  width: 398px;
+  height: 415px;
+  left: 137px;
+  top: 1117px;
+}
+
+.card__background {
+  top: 1000px;
 }
 
 .items__text.description {
@@ -114,7 +306,6 @@ body {
 }
 
 .items__text.subtitle {
-  /*position: absolute;*/
   width: 220px;
   height: 17px;
   left: 934px;
@@ -196,7 +387,6 @@ body {
 }
 
 .look__link {
-  /*position: absolute;*/
   width: 299px;
   height: 58px;
   left: 884px;
@@ -238,20 +428,6 @@ body {
   opacity: 0.5;
 }
 
-p {
-  width: 368px;
-  height: 101px;
-  left: 867px;
-  top: 2199px;
-  font-family: Montserratregular, sans-serif;
-  font-style: normal;
-  font-weight: normal;
-  font-size: 15px;
-  line-height: 21px;
-  color: #000000;
-  opacity: 0.5;
-}
-
 .look__basket {
   width: 163px;
   height: 0px;
@@ -289,4 +465,222 @@ p {
   font-size: 12px;
   line-height: 15px;
   color: #000000;
+}
+*/
+
+@media only screen and (min-width: 1440px) and (max-width: 1960px){
+  body {
+    display: flex;      
+  }
+
+  .nav__link {
+    top: 70px;
+    font-size: 60px;
+  }
+
+  .language {
+    width: 31px;
+    height: 25px;
+    left: 660px;
+    top: 80px;
+    font-weight: 700;
+    font-size: 30px;
+  }
+
+  .section__title {
+    width: 480px;
+    top: 190px;
+    font-weight: bold;
+    font-size: 120px;
+    line-height: 92px;
+  }
+
+  .section__description {
+    width: 740px;
+    font-size: 30px;
+    line-height: 55px;
+  }
+
+  .section__border {
+    width: 250px;
+    height: 50px;
+    top: 900px;
+    font-size: 20px;
+  }
+
+  .section__other {
+    width: 400px;
+    height: 60px;
+    top: 900px;
+    font-size: 20px;
+  }
+
+  .section__arrow {
+    width: 600px;
+    height: 44px;
+    top: 900px;
+  }
+
+  .girl {
+    width: 600px;
+    height: 600px;
+    left: 100px;
+    top: 220px;
+  }
+
+  .scrol {
+    display: none;
+  }
+
+  .rectangle {
+    width: 780px;
+    height: 1080px;
+  }
+
+  #menu__square {
+    display: flex;
+    height: 150px;
+    width: 200px;
+    left: 1750px;
+    top: 0px;
+    border-radius: 0px;
+    background: #000000;
+    opacity: 0.05;
+  }
+   
+  .menu__btn {
+    left:1800px;
+    top: 75px;
+    width: 100px;
+    height: 60px;
+  }
+
+  .social__link-inst {
+    left: 63px;
+    top: 900px;
+  }
+
+  .social__link-vk {
+    top: 900px;
+    left: 80px
+  }
+
+  .social__link-fb {
+    top: 900px;
+    left: 97px;
+  }
+}
+
+/*@media screen and (min-width: 768px) and (max-width: 1024px){
+  body {
+    display: flex;
+    }
+}*/
+
+@media screen and (min-width: 0px) and (max-width: 375px){
+  body {
+    display: flex;
+    max-width: 100%;     
+  }
+
+  .nav__link {
+    display: flex;
+    color: black;
+    position: absolute;
+    width: 98px;
+    height: 37px;
+    left: 27px;
+    top: 85px;
+    }
+
+  .language {
+    display: none;
+  }
+
+  .card {
+    display: flex;
+    background-image: url(./images/girl-smallerc.png);
+    background-repeat: no-repeat;
+    position: absolute;
+    height: 596px;
+    min-width: 375px;
+    left: 0px;
+    top: 140px;
+    z-index: -1;
+  }
+
+  .girl {
+    display: none;
+  }
+
+  .header {
+    display: flex;
+  }
+
+  .rectangle {
+    display: none;
+  }
+
+  .tick {
+    display: grid;
+    position: absolute;
+    cursor: pointer;
+    width: 33px;
+    height: 18px;
+    left: 173px;
+    top: 490px;
+  }
+
+  .header__menu {
+    display: flex;
+  }
+
+  #menu__square {
+    display: flex;
+    height: 69px;
+    width: 70px;
+    left: 305px;
+    top: 71px;
+    border-radius: 0px;
+    background: #000000;
+    opacity: 0.05;
+  }
+   
+  .menu__btn {
+    left:326px;
+    top: 108px;
+    width: 8%;
+    height: 3px;
+  }
+
+  .section__title {
+    position: absolute;
+    font-family: Montserrat;
+    font-style: normal;
+    font-weight: bold;
+    font-size: 50px;
+    line-height: 51px;
+    color: #000000;
+    height: 103px;
+    width: 297px;
+    left: 6px;
+    top: 522px;
+    border-radius: 0px;
+  }
+
+  .scrol {
+	display: none;
+  }
+
+  .section__description {
+	display: none;
+  }
+
+  .social {
+	display: none;
+  }
+
+  .section__next {
+	display: none;
+  }
 }
