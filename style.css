@@ -709,11 +709,15 @@ body {
   top: -1872px;
 }
 
-@media only screen and (min-width: 1440px) and (max-width: 1960px){
+@media only screen and (min-width: 1441px) and (max-width: 1960px){
   body {
     display: flex;
     max-width: 100%;  
   }
+
+  /*.nav {
+
+  }*/
 
   .nav__link {
     top: 70px;
@@ -1401,12 +1405,13 @@ body {
 
   .look__arrow {
     display: flex;
+    position: relative;
     background-image: url(./images/arrowsec3.png);
     background-repeat: no-repeat;
-    height: 596px;
-    min-width: 375px;
-    left: -342px;
-    top: 1139px;
+    height: 12px;
+    width: 135px;
+    left: -343px;
+    top: 1138px;
   }
 
   .look__arrow_link {
@@ -1414,9 +1419,10 @@ body {
   }
 
   .look__stripe {
+  	display: flex;
     height: 1000px;
-    left: -429px;
-    top: -5px;
+    left: -430px;
+    top: 580px;
     width: 41px;
     height: 597px;
   }
