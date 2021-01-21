@@ -7,10 +7,23 @@ body {
 
 .header {
   display: flex;
+  height: 92px;
+  width: 1440px;
 }
 
-.main {
+.nav {
   display: flex;
+  width: 430px;
+  height: 70px;
+}
+
+main {
+  display: flex;
+  position: relative;
+  height: 450px;
+  width: 600px;
+  left: 750px;
+  top: 170px;
 }
 
 .nav__link {
@@ -46,15 +59,24 @@ body {
   color: #FFFFFF;
 }
 
+.burger__menu {
+  position: relative;
+  left: 1400px;
+  top: 0;
+  height: 93px;
+  width: 93px;
+}
+
 #menu__toggle {
   opacity: 0;
 }
 
 .menu__btn {
+  display: flex;
   align-items: center;
   position: absolute;
   top: 48px;
-  left: 1377px;
+  left: -453px;
   width: 37px;
   height: 40px;
   cursor: pointer;
@@ -99,24 +121,36 @@ body {
   position: absolute;
   width: 92px;
   height: 92px;
-  left: 1348px;
+  left: -484px;
   top: 0px;
   background: #000000;
   opacity: 0.05;
 }
 
 .section {
-  position: absolute;
+  position: relative;
   align-items: center;
   z-index: 1;
+  height: 350px;
+  width: 520px;
+  top: -13px;
+  left: 19px;
+}
+
+.section__collection {
+  position: relative;
+  width: 520px;
+  height: 350px;
+  left: 10px;
+  top: 9px;
 }
 
 .section__title { 
   position: absolute;
   width: 475px;
-  height: 164px;
-  left: 789px;
-  top: 263px;
+  height: 165px;
+  left: 10px;
+  top: 32px;
   font-family: "Montserratbold", sans-serif;
   font-style: normal;
   font-weight: bold;
@@ -129,9 +163,8 @@ body {
 .section__description {
   position: absolute;
   width: 467px;
-  height: 127px;
-  left: 789px;
-  top: 453px;
+  left: 11px;
+  top: 221px;
   font-family: "Montserratnormal", sans-serif;
   font-style: normal;
   font-weight: normal;
@@ -142,7 +175,9 @@ body {
 }
 
 .section__next {
-  position: absolute;
+  position: relative;
+  height: 100px;
+  width: 550px;
   font-family: Montserratmedium, sans-serif;
   font-style: normal;
   font-weight: 500;
@@ -160,25 +195,24 @@ body {
   position: absolute;
   width: 203px;
   height: 44px;
-  left: 786px;
-  top: 591px;
+  left: 17px;
+  top: 17px;
   border: 1.5px solid #000000;
   box-sizing: border-box;
   text-align: center;
   cursor: pointer;
-  color: black;
+  color: #000000;
 }
 
 .section__other {
-  text-decoration: none;
   color: black;
   cursor: pointer;
   text-decoration: none;
   position: absolute;
   width: 203px;
   height: 44px;
-  left: 1027px;
-  top: 590px;
+  left: 258px;
+  top: 16px;
 }
 
 .section__arrow {
@@ -188,31 +222,34 @@ body {
   position: absolute;
   width: 203px;
   height: 44px;
-  left: 1153px;
-  top: 592px;
+  left: 384px;
+  top: 19px;
 }
 
 .social {
   display: flex;
+  display: flex;
+  position: relative;
   align-items: center;
+  height: 70px;
+  width: 200px;
+  left: 35px;
+  top: 260px;
 }
 
 .social__link-inst {
   position: relative;
-  margin-left: 52px;
-  margin-right: 12px;
   width: 43px;
   height: 43px;
-  top: 791px;
+  left: 18px;
   z-index: 1;
 }
 
 .social__link-vk {
   position: relative;
-  margin-right: 12px;
   width: 43px;
   height: 43px;
-  top: 791px;
+  left: 29px;
   z-index: 1;
 }
 
@@ -220,7 +257,7 @@ body {
   position: relative;
   width: 43px;
   height: 43px;
-  top: 791px;
+  left: 40px;
   z-index: 1;
 }
 
@@ -229,7 +266,7 @@ body {
   width: 308px;
   height: 807px;
   left: 425px;
-  top: -15px;
+  top: -559px;
   z-index: -1;
 }
 
