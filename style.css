@@ -2,7 +2,9 @@ body {
   font-family: 'Montserratmedium', 'Montserratbold', 'Montserratnormal', sans-serif;
   margin: 0;
   padding: 0;
+  /*min-width: 376px;*/
   max-width: 1440px;
+  width: 100vmax;
 } 
 
 .header {
@@ -233,7 +235,7 @@ main {
   height: 70px;
   width: 200px;
   left: 35px;
-  top: 260px;
+  top: -638px;
 }
 
 .social__link-inst {
@@ -295,11 +297,11 @@ main {
   position: relative;
   height: 900px;
   width: 750px;
-  top: -611px;
+  top: -543px;
 }
 
 /*Здесь  2 секция*/
-/*
+
 .items {
   display: flex;
   position: relative;
@@ -904,8 +906,8 @@ main {
 @media only screen and (min-width: 1441px) and (max-width: 1920px){
   body {
     display: flex;
-    max-width: 100%;
-    height: 100vh;
+    max-width: 1920px;
+    width: 100vmax;
   }
   
   .header {
@@ -921,116 +923,187 @@ main {
     left: 2px;
   }
 
-
-main {
-  display: flex;
-  position: relative;
-  height: 450px;
-  width: 600px;
-  left: 750px;
-  top: 170px;
+  main {
+    display: flex;
+    position: relative;
+    height: 875px;
+    width: 902px;
+    left: 1005px;
+    top: 200px;
 }
 
   .nav__link {
     position: relative;
-    top: 49px;
-    height: 50px;
+    top: 54px;
+    height: 54px;
     width: 170px;
-    font-size: 60px;
+    font-size: 40px;
   }
 
   .language {
     width: 31px;
-    height: 25px;
-    left: 660px;
-    top: 80px;
+    height: 22px;
+    left: 348px;
+    top: 61px;
     font-weight: 700;
-    font-size: 30px;
+    font-size: 27px;
+  }
+
+  .section {
+    height: 800px;
+    width: 900px;
+    top: 0px;
+    left: 0px;
+  }
+
+  .section__collection {
+    position: relative;
+    width: 800px;
+    height: 450px;
+    left: 0px;
+    top: 150px;
   }
 
   .section__title {
     width: 480px;
-    top: 190px;
-    font-size: 120px;
-    line-height: 92px;
+    top: 36px;
+    left: 47px;
+    font-size: 106px;
+    line-height: 101px;
   }
 
   .section__description {
-    width: 740px;
-    font-size: 30px;
-    line-height: 55px;
+    width: 640px;
+    font-size: 23px;
+    line-height: 29px;
+    top: 278px;
+    left: 46px;
+  }
+
+  .section__next {
+    height: 100px;
+    width: 800px;
+    top: 150px;
+    left: 10px;
   }
 
   .section__border {
-    width: 250px;
-    height: 50px;
-    top: 900px;
-    font-size: 20px;
+    width: 270px;
+    height: 59px;
+    top: 20px;
+    font-size: 18px;
+    left: 32px;
+    justify-content: center;
+    display: inline-flex;
+    align-items: center;
   }
 
   .section__other {
-    width: 400px;
+  	width: 272px;
     height: 60px;
-    top: 900px;
-    font-size: 20px;
+    top: 30px;
+    left: 352px;
+    font-size: 17px;
   }
 
   .section__arrow {
-    width: 600px;
-    top: 900px;
+    width: 624px;
+    top: 30px;
+    left: 356px;
+    height: 50px;
+  }
+
+  .card {
+    height: 1200px;
+    width: 1700px;
+    top: 0px;
+    left: -903px;
   }
 
   .girl {
-    width: 600px;
-    height: 600px;
-    left: 100px;
-    top: 220px;
+    width: 731px;
+    height: 750px;
+    left: 249px;
+    top: 224px;
   }
 
   .scrol {
-    display: none;
+    width: 418px;
+    height: 1079px;
+    left: 570px;
+    top: 72px;
   }
 
   .rectangle {
-    width: 780px;
-    height: 1080px;
+    width: 613px;
+    height: 1200px;
+    top: 0px;
+    left: 6px;
   }
 
   #menu__square {
-    display: flex;
-    height: 150px;
-    width: 200px;
-    left: 1750px;
+        display: flex;
+    height: 121px;
+    width: 125px;
+    left: 1px;
     border-radius: 0px;
   }
    
   .menu__btn {
-    left:1800px;
-    top: 75px;
-    width: 100px;
-    height: 60px;
+       left: 39px;
+    top: 63px;
+    width: 51px;
+    height: 26px;
+  }
+
+  .burger__menu {
+  	position: relative;
+    left: 865px;
+    top: 0;
+    height: 119px;
+    width: 127px;
+  }
+
+  .social {
+    height: 94px;
+    width: 700px;
+    left: -1600px;
+    top: 1066px;
   }
 
   .social__link-inst {
-  	display: flex;
+    display: flex;
     left: 63px;
-    top: -1000px;
+    top: 4px;
+    width: 50px;
+    height: 50px;
   }
 
   .social__link-vk {
-  	display: flex;
-    top: -1000px;
-    left: 80px
+    display: flex;
+    top: 4px;
+    left: 83px;
+    height: 50px;
+    width: 50px;
   }
 
   .social__link-fb {
-  	display: flex;
-    top: -1000px;
-    left: 97px;
+    display: flex;
+    top: 4px;
+    left: 109px;
+    width: 52px;
+    height: 50px;
   }
 
 /*@media вторая секция */
-/*
+
+  .items {
+    width: 1920px;
+    height: 900px;
+    left: 0px;
+    top: 1112px;
+}
+
   .items__pics_frontbag {
     width: 700px;
     height: 1000px;
@@ -1172,7 +1245,7 @@ main {
     font-size: 32px;
     line-height: 35px;
   }
-*/
+
 
   /*медиа3секция*/
 
