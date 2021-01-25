@@ -2,71 +2,90 @@ body {
   font-family: 'Montserratmedium', 'Montserratbold', 'Montserratnormal', sans-serif;
   margin: 0;
   padding: 0;
-  /*min-width: 376px;*/
-  max-width: 1440px;
-  width: 100vmax;
+  width: 100vw;
 } 
 
 .header {
   display: flex;
-  height: 92px;
-  width: 1440px;
+  height: 100vh;
+  width: 100vw;
 }
 
-.nav {
+.header__top {
   display: flex;
-  width: 430px;
-  height: 70px;
+  width: 100vw;
+  height: 11vh;
+  flex-wrap: wrap;
+  flex-direction: row;
 }
 
-main {
-  display: flex;
-  position: relative;
-  height: 450px;
-  width: 600px;
-  left: 750px;
-  top: 170px;
-}
-
-.nav__link {
+.header__top_rectangle {
   position: absolute;
-  width: 98px;
-  height: 37px;
-  left: 52px;
-  top: 36px;
+  width: 461px;
+  height: 900px;
+  left: 0px;
+  top: 0px;
+  z-index: -1;
+}
+
+.header__top_logo {
+  position: relative;
+  left: 3.8%;
+  top: 35%;
+  width: 10%;
+  height: 40%;
   font-family: "Montserratmedium", sans-serif;
   font-style: normal;
   font-weight: 500;
-  font-size: 30px;
-  line-height: 37px;
+  font-size: 1.8rem;
   text-align: center;
   letter-spacing: 0.07em;
   color: #FFFFFF;
+  /*color: black;*/
   text-decoration: none;
+  flex-wrap: wrap;
+  flex-direction: row;
+  cursor: pointer;
 }
 
-.language {
+.header__top_language {
   position: relative;
   cursor: pointer;
-  width: 31px;
-  height: 25px;
-  left: 388px;
-  top: 42px;
+  width: 2%;
+  height: 30%;
+  left: 17%;
+  top: 40%;
   font-family: Montserratnormal, sans-serif;
   font-style: normal;
   font-weight: 500;
-  font-size: 20px;
-  line-height: 24px;
+  font-size: 1.3rem;
   text-align: right;
   color: #FFFFFF;
+  cursor: pointer;
+  /*color: black;*/
+}
+
+.header__top_tick {
+  position: relative;
+  width: 1%;
+  height: 9%;
+  left: 17.5%;
+  top: 53%;
+  flex-direction: row;
+  cursor: pointer;
+}
+
+.header__top_tick-mob {
+  display: none; 
 }
 
 .burger__menu {
   position: relative;
-  left: 1400px;
-  top: 0;
-  height: 93px;
-  width: 93px;
+  left: 80%;
+  top: 0%;
+  height: 99%;
+  width: 7%;
+  cursor: pointer;
 }
 
 #menu__toggle {
@@ -76,16 +95,15 @@ main {
 .menu__btn {
   display: flex;
   align-items: center;
-  position: absolute;
-  top: 48px;
-  left: -453px;
-  width: 37px;
-  height: 40px;
+  position: relative;
+  top: 30%;
+  left: 37%;
+  width: 37%;
+  height: 40%;
   cursor: pointer;
   z-index: 1;
   padding: 0;
   margin: 0;
-  border-radius: 10px;
   outline: 10px;
   transition: background 0.3s;
 }
@@ -120,34 +138,49 @@ main {
 }
 
 #menu__square {
-  position: absolute;
-  width: 92px;
-  height: 92px;
-  left: -484px;
-  top: 0px;
+  position: relative;
+  left: 9%;
+  top: -60%;
+  height: 92%;
+  width: 91%;
   background: #000000;
   opacity: 0.05;
 }
 
-.section {
-  position: relative;
-  align-items: center;
-  z-index: 1;
-  height: 350px;
-  width: 520px;
-  top: -13px;
-  left: 19px;
+.header__backgrnd {
+position: relative;
+    display: flex;
+    width: 33vw;
+    height: 100vh;
+    flex-wrap: wrap;
+    flex-direction: column;
+    left: -20%;
+  z-index: -3;
 }
 
-.section__collection {
+.header__backgrnd_rectangle {
   position: relative;
-  width: 520px;
-  height: 350px;
-  left: 10px;
-  top: 9px;
+  left: 0%;
+  width: 97.5%;
 }
 
-.section__title { 
+.header__card {
+position: relative;
+width: 82vw;
+    height: 80vh;
+    left: 10%;
+    top: 9%;
+}
+
+.header__card_girl {
+  position: absolute;
+  width: 549px;
+  height: 562px;
+  left: 186px;
+  top: 169px;
+}
+
+.header__card_title { 
   position: absolute;
   width: 475px;
   height: 165px;
@@ -162,7 +195,7 @@ main {
   margin: -17px 0 18px 0px;
 }
 
-.section__description {
+.header__card_description {
   position: absolute;
   width: 467px;
   left: 11px;
@@ -176,7 +209,7 @@ main {
   margin: -26px 0 18px 0px;
 }
 
-.section__next {
+.header__card_next {
   position: relative;
   height: 100px;
   width: 550px;
@@ -188,11 +221,11 @@ main {
   line-height:44px;
 }
 
-.section__next:hover {
+.header__card_next:hover {
   background: #f4f6f6;
 }
 
-.section__border {
+.header__card_border {
   text-decoration: none;
   position: absolute;
   width: 203px;
@@ -206,7 +239,7 @@ main {
   color: #000000;
 }
 
-.section__other {
+.header__card_other {
   color: black;
   cursor: pointer;
   text-decoration: none;
@@ -217,7 +250,7 @@ main {
   top: 16px;
 }
 
-.section__arrow {
+.header__card_arrow {
   color: black;
   cursor: pointer;
   text-decoration: none;
@@ -228,7 +261,7 @@ main {
   top: 19px;
 }
 
-.social {
+.header__down {
   display: flex;
   position: relative;
   align-items: center;
@@ -238,7 +271,7 @@ main {
   top: -638px;
 }
 
-.social__link-inst {
+.header__down_inst {
   position: relative;
   width: 43px;
   height: 43px;
@@ -246,7 +279,7 @@ main {
   z-index: 1;
 }
 
-.social__link-vk {
+.header__down_vk {
   position: relative;
   width: 43px;
   height: 43px;
@@ -254,7 +287,7 @@ main {
   z-index: 1;
 }
 
-.social__link-fb {
+.header__down_fb {
   position: relative;
   width: 43px;
   height: 43px;
@@ -262,37 +295,7 @@ main {
   z-index: 1;
 }
 
-.scrol {
-  position: relative;
-  width: 308px;
-  height: 807px;
-  left: 425px;
-  top: 52px;
-  z-index: -1;
-}
-
-.girl {
-  position: absolute;
-  width: 549px;
-  height: 562px;
-  left: 186px;
-  top: 169px;
-} 
-
-.rectangle {
-  position: absolute;
-  width: 461px;
-  height: 900px;
-  left: 0px;
-  top: 0px;
-  z-index: -1;
-}
-
-.tick {
-  display: none; 
-}
-
-.card {
+.header__down_scrol {
   display: flex;
   position: relative;
   height: 900px;
@@ -949,14 +952,14 @@ main {
     font-size: 27px;
   }
 
-  .section {
+  .header {
     height: 800px;
     width: 900px;
     top: 0px;
     left: 0px;
   }
 
-  .section__collection {
+  .header__collection {
     position: relative;
     width: 800px;
     height: 450px;
@@ -964,7 +967,7 @@ main {
     top: 150px;
   }
 
-  .section__title {
+  .header__title {
     width: 480px;
     top: 36px;
     left: 47px;
@@ -972,7 +975,7 @@ main {
     line-height: 101px;
   }
 
-  .section__description {
+  .header__description {
     width: 640px;
     font-size: 23px;
     line-height: 29px;
@@ -980,14 +983,14 @@ main {
     left: 46px;
   }
 
-  .section__next {
+  .header__next {
     height: 100px;
     width: 800px;
     top: 150px;
     left: 10px;
   }
 
-  .section__border {
+  .header__border {
     width: 270px;
     height: 59px;
     top: 20px;
@@ -998,7 +1001,7 @@ main {
     align-items: center;
   }
 
-  .section__other {
+  .header__other {
   	width: 272px;
     height: 60px;
     top: 30px;
@@ -1006,7 +1009,7 @@ main {
     font-size: 17px;
   }
 
-  .section__arrow {
+  .header__arrow {
     width: 624px;
     top: 30px;
     left: 356px;
