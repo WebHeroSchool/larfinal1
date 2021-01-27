@@ -7,8 +7,12 @@ body {
 
 .header {
   display: flex;
+  flex-direction: column;
   height: 100vh;
   width: 100vw;
+  background-image: url(./images/rectangle5.png);
+  background-size: 32vw;
+  background-repeat: no-repeat;
 }
 
 .header__top {
@@ -19,14 +23,14 @@ body {
   flex-direction: row;
 }
 
-.header__top_rectangle {
+/*.header__top_rectangle {
   position: absolute;
   width: 461px;
   height: 900px;
   left: 0px;
   top: 0px;
   z-index: -1;
-}
+}*/
 
 .header__top_logo {
   position: relative;
@@ -147,160 +151,174 @@ body {
   opacity: 0.05;
 }
 
-.header__backgrnd {
+/*.header__backgrnd {
 position: relative;
     display: flex;
     width: 33vw;
     height: 100vh;
     flex-wrap: wrap;
     flex-direction: column;
+    background-size: cover;
     left: -20%;
-  z-index: -3;
+    z-index: -3;
+    top: -5.5%;
 }
 
 .header__backgrnd_rectangle {
   position: relative;
   left: 0%;
   width: 97.5%;
-}
+}*/
 
 .header__card {
 position: relative;
-width: 82vw;
-    height: 80vh;
-    left: 10%;
-    top: 9%;
+    width: 90vw;
+    height: 75vh;
+    left: 8%;
+    top: 1%;
+    flex-wrap: wrap;
+    flex-direction: row;
+    float: left;
 }
 
 .header__card_girl {
-  position: absolute;
-  width: 549px;
-  height: 562px;
-  left: 186px;
-  top: 169px;
+position: relative;
+    width: 42.4%;
+    height: 83.5%;
+    left: 5.5%;
+    top: 9%;
 }
 
 .header__card_title { 
-  position: absolute;
-  width: 475px;
-  height: 165px;
-  left: 10px;
-  top: 32px;
-  font-family: "Montserratbold", sans-serif;
-  font-style: normal;
-  font-weight: bold;
-  font-size: 80px;
-  line-height: 82px;
-  color: #000000;
-  margin: -17px 0 18px 0px;
+    position: relative;
+    width: 37%;
+    height: 24%;
+    left: 9.8%;
+    top: 24%;
+    font-family: "Montserratbold", sans-serif;
+    font-style: normal;
+    font-weight: bold;
+    font-size: 5em;
+    line-height: 100%;
+    margin: 0;
 }
 
 .header__card_description {
-  position: absolute;
-  width: 467px;
-  left: 11px;
-  top: 221px;
-  font-family: "Montserratnormal", sans-serif;
-  font-style: normal;
-  font-weight: normal;
-  font-size: 15px;
-  line-height: 21px;
-  color: black;
-  margin: -26px 0 18px 0px;
+    position: relative;
+    width: 36%;
+    height: 20%;
+    left: 9.8%;
+    top: 27.5%;
+    font-family: "Montserratnormal", sans-serif;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 0.95em;
+    line-height: 1.33;
+    letter-spacing: 0px;
+    color: black;
+    margin: 0;
 }
 
 .header__card_next {
-  position: relative;
-  height: 100px;
-  width: 550px;
-  font-family: Montserratmedium, sans-serif;
-  font-style: normal;
-  font-weight: 500;
-  font-size: 13px;
-  text-align: center;
-  line-height:44px;
+    position: relative;
+    height: 10%;
+    width: 41%;
+    font-family: Montserratmedium, sans-serif;
+    font-style: normal;
+    font-weight: 500;
+    font-size: 1em;
+    text-align: center;
+    line-height: 4%;
+    top: 29%;
 }
 
-.header__card_next:hover {
+
+.header__card_border {
+    text-decoration: none;
+    width: 38%;
+    height: 64%;
+    left: 3%;
+    top: 23%;
+    border: 0.09em solid #000000;
+    /* box-sizing: border-box; */
+    text-align: center;
+    cursor: pointer;
+    color: #000000;
+    font-size: smaller;
+    display: inline-flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.header__card_border:hover {
   background: #f4f6f6;
 }
 
-.header__card_border {
-  text-decoration: none;
-  position: absolute;
-  width: 203px;
-  height: 44px;
-  left: 17px;
-  top: 17px;
-  border: 1.5px solid #000000;
-  box-sizing: border-box;
-  text-align: center;
-  cursor: pointer;
-  color: #000000;
-}
-
 .header__card_other {
-  color: black;
-  cursor: pointer;
-  text-decoration: none;
-  position: absolute;
-  width: 203px;
-  height: 44px;
-  left: 258px;
-  top: 16px;
+    color: black;
+    cursor: pointer;
+    text-decoration: none;
+    width: 41%;
+    height: 27%;
+    left: 9%;
+    top: 57%;
+    font-size: 0.813em;
 }
 
 .header__card_arrow {
-  color: black;
-  cursor: pointer;
-  text-decoration: none;
-  position: absolute;
-  width: 203px;
-  height: 44px;
-  left: 384px;
-  top: 19px;
+    color: black;
+    cursor: pointer;
+    text-decoration: none;
+    width: 20%;
+    height: 4%;
+    left: 2.5%;
+    top: 47%;
 }
 
 .header__down {
-  display: flex;
-  position: relative;
-  align-items: center;
-  height: 70px;
-  width: 200px;
-  left: 35px;
-  top: -638px;
+    display: flex;
+    position: relative;
+    align-items: center;
+    height: 9vh;
+    width: 100vw;
+    left: 0%;
+    top: 3%;
 }
 
 .header__down_inst {
-  position: relative;
-  width: 43px;
-  height: 43px;
-  left: 18px;
-  z-index: 1;
+    position: relative;
+    width: 3%;
+    height: 62%;
+    left: 3.6%;
+    z-index: 1;
+    top: -5%;
 }
 
 .header__down_vk {
-  position: relative;
-  width: 43px;
-  height: 43px;
-  left: 29px;
-  z-index: 1;
+      position: relative;
+    width: 3%;
+    height: 62%;
+    left: 4.6%;
+    z-index: 1;
+    top: -5%;
 }
 
 .header__down_fb {
-  position: relative;
-  width: 43px;
-  height: 43px;
-  left: 40px;
-  z-index: 1;
+    position: relative;
+    width: 3%;
+    height: 62%;
+    left: 5.4%;
+    z-index: 1;
+    top: -5%;
 }
 
 .header__down_scrol {
-  display: flex;
-  position: relative;
-  height: 900px;
-  width: 750px;
-  top: -543px;
+    position: relative;
+    width: 2%;
+    height: 62%;
+    left: 40%;
+    z-index: 1;
+    top: -5%;
 }
 
 /*Здесь  2 секция*/
