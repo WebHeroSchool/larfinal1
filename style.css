@@ -530,25 +530,25 @@ body {
 }
 
 .main__cart {
-  display: flex;
+    display: flex;
     position: relative;
     width: 51.5%;
-    height: 7.5%;
+    height: 7.7%;
     left: 35%;
-    top: 20%;
+    top: 20.2%;
     border: 0.125em solid #000000;
     box-sizing: border-box;
     z-index: 1;
     background: transparent;
-  font-family: Montserratmedium, sans-serif;
-  font-style: normal;
-  font-weight: 500;
-  font-size: 0.813em;
-  line-height: 3em;
-  padding-left: 8%;
-  color: #000000;
-  text-align: center;
-  cursor: pointer;
+    font-family: Montserratmedium, sans-serif;
+    font-style: normal;
+    font-weight: 500;
+    font-size: 0.813em;
+    line-height: 3em;
+    padding-left: 8%;
+    color: #000000;
+    text-align: center;
+    cursor: pointer;
 }
 
 .main__other {
@@ -836,23 +836,29 @@ body {
     left: 6%;
     top: 28.5%;
 }
-.footer__bottom0{
+/*.footer__bottom0{
 	display: flex;
     position: relative;
     width: 25vw;
     height: 5vh;
     left: 0%;
     top: 80%;
-}
+}*/
 
 .footer__bottom {
     display: flex;
     position: relative;
-    width: 25vw;
-    height: 5vh;
-    left: 0%;
-    top: 84%;
     flex-direction: column;
+    background-image: url(./images/webhero.png);
+    background-repeat: no-repeat;
+    margin: 0;
+    background-size: cover;
+    z-index: 5;
+    top: 96%;
+    left: 84.5%;
+    width: 14%;
+    height: 2.3%;
+    position: fixed;
 }
 
 /*.footer__bottom_text {
@@ -870,14 +876,14 @@ body {
     color: #000000;
 }*/
 
-.footer__bottom_logo {
+/*.footer__bottom_logo {
     display: flex;
     position: relative;
     width: 22%;
     height: 47%;
     left: 71.5%;
     top: 21.5%;
-}
+}*/
 
 
 
