@@ -176,6 +176,10 @@ body {
   margin: 0;
 }
 
+.header__card_tick-mob {
+  display: none;
+}
+
 .header__card_description {
   position: relative;
   width: 36%;
@@ -480,12 +484,12 @@ body {
     position: relative;
     height: 25%;
     width: 1%;
-    left: -8%;
-    top: 35%;
+    left: -7.5%;
+    top: 31%;
     font-family: Montserratmedium, sans-serif;
     font-style: normal;
     font-weight: 500;
-    font-size: 0.938em;
+    font-size: 1vw;
     line-height: 2.188em;
     text-align: center;
     z-index: 1;
@@ -496,14 +500,14 @@ body {
 .main__quantity_minus {
     display: flex;
     position: relative;
-    left: -12.5%;
-    top: 36%;
+    left: -12.2%;
+    top: 37%;
     height: 24%;
     width: 2%;
     font-family: Montserratmedium, sans-serif;
     font-style: normal;
     font-weight: 500;
-    font-size: 1.3em;
+    font-size: 1vw;
     text-align: center;
     z-index: 1;
     color: black;
@@ -511,16 +515,16 @@ body {
 }
 
 .main__quantity_plus {
-  display: flex;
-  position: relative;
+    display: flex;
+    position: relative;
     width: auto;
     height: 25%;
-    left: -2.7%;
-    top: 35%;
+    left: -2.6%;
+    top: 31%;
     font-family: Montserratmedium, sans-serif;
     font-style: normal;
     font-weight: 500;
-    font-size: 0.938em;
+    font-size: 1.01vw;
     line-height: 2.188em;
     text-align: center;
     color: black;
@@ -542,7 +546,7 @@ body {
     font-family: Montserratmedium, sans-serif;
     font-style: normal;
     font-weight: 500;
-    font-size: 0.813em;
+    font-size: 0.887vw;
     line-height: 3em;
     padding-left: 8%;
     color: #000000;
@@ -690,12 +694,9 @@ body {
     width: 78%;
     height: 19%;
     left: 11%;
-    top: 10%;
-    font-family: Montserratbold, sans-serif;
-    font-style: normal;
-    font-weight: bold;
-    font-size: 0.938em;
-  line-height: 2.5vh;
+    top: 11%;
+    font-size: 1vw;
+  line-height: 2.4vh;
   color: #000000;
   opacity: 50%;
     z-index: 1;
@@ -735,12 +736,12 @@ body {
     position: relative;
     width: 5%;
     height: 10%;
-    left: -8%;
+    left: -7.6%;
     top: 33%;
     font-family: Montserratmedium, sans-serif;
     font-style: normal;
     font-weight: 500;
-    font-size: 0.938em;
+    font-size: 0.938vw;
     line-height: 2.1875em;
     text-align: center;
     z-index: 1;
@@ -753,12 +754,12 @@ body {
     position: relative;
     width: 3%;
     height: 30%;
-    left: -7%;
+    left: -6.9%;
     top: 35%;
     font-family: Montserratmedium, sans-serif;
     font-style: normal;
     font-weight: 500;
-    font-size: 0.9375em;
+    font-size: 0.93vw;
     line-height: 2.1875em;
     text-align: center;
     z-index: 1;
@@ -771,12 +772,12 @@ body {
     position: relative;
     width: 2%;
     height: 27%;
-    left: -4%;
-    top: 33%;
+    left: -4.3%;
+    top: 35%;
     font-family: Montserratmedium, sans-serif;
     font-style: normal;
     font-weight: 500;
-    font-size: 0.938em;
+    font-size: 0.938vw;
     line-height: 2.1875em;
     text-align: center;
     z-index: 1;
@@ -838,14 +839,6 @@ body {
     left: 6%;
     top: 28.5%;
 }
-/*.footer__bottom0{
-	display: flex;
-    position: relative;
-    width: 25vw;
-    height: 5vh;
-    left: 0%;
-    top: 80%;
-}*/
 
 .footer__bottom {
     display: flex;
@@ -863,7 +856,8 @@ body {
 
 
 /*
-@media only screen and (min-width: 1441px) and (max-width: 1920px){
+@media only screen and (min-width: 1200px) and (max-width: 1000px){
+/*
  body {
   font-family: 'Montserratmedium', 'Montserratbold', 'Montserratnormal', sans-serif;
   margin: 0;
@@ -902,7 +896,7 @@ body {
   letter-spacing: 0.1vw;
   color: #FFFFFF;
   /*color: black;*/
-  text-decoration: none;
+ /* text-decoration: none;
   flex-wrap: wrap;
   flex-direction: row;
   cursor: pointer;
@@ -924,6 +918,7 @@ body {
   cursor: pointer;
   padding-top: 1vh;
   /*color: black;*/
+ /* 
 }
 
 .header__top_tick {
@@ -934,7 +929,7 @@ body {
   flex-direction: row;
   cursor: pointer;
   padding-top: 1%
-}
+}/*
 
 .header__top_tick-mob {
   display: none; 
@@ -1079,6 +1074,7 @@ body {
   top: 23%;
   border: 0.09em solid #000000;
   /* box-sizing: border-box; */
+  /*
   text-align: center;
   cursor: pointer;
   color: #000000;
@@ -1159,7 +1155,7 @@ body {
   top: -5%;
 }
 
-/*Здесь  2 секция*/
+/*Здесь  2 секция*/ /*
 
 .main {
   display: flex;
@@ -1444,8 +1440,8 @@ body {
 
 
 
-/*3 секция норм*/
-
+/*3 секция 1920*/
+/*
 .footer {
   display: flex;
   position: relative;
@@ -1703,7 +1699,7 @@ body {
     height: 37%;
     left: 6%;
     top: 28.5%;
-}
+}*/
 /*.footer__bottom0{
 	display: flex;
     position: relative;
@@ -1711,7 +1707,7 @@ body {
     height: 5vh;
     left: 0%;
     top: 80%;
-}*/
+}
 
 .footer__bottom {
     display: flex;
@@ -1727,117 +1723,152 @@ body {
     position: fixed;
 }
 }*/
-/*
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 @media screen and (min-width: 0px) and (max-width: 375px){
   body {
     display: flex;
-    max-width: 100%;     
-  }
+    max-width: 100%;
+    max-height: 100vh;
 
-  .nav__link {
-    display: flex;
-    color: black;
-    width: 98px;
-    height: 37px;
-    left: 27px;
-    top: 85px;
-    }
-
-  .language {
-    display: none;
-  }
-
-  .card {
-    display: flex;
-    background-image: url(./images/girl-smallerc.png);
-    background-repeat: no-repeat;
-    position: absolute;
-    height: 596px;
-    min-width: 375px;
-    left: 0px;
-    top: 140px;
-  }
-
-  .girl {
-    display: none;
   }
 
   .header {
-    display: flex;
+    background-image: none;
+  }
+
+  .header__top {
+    height: 12vh;
+  }
+
+  .header__top_logo {
+  	font-size: 8vw;
+    left: 6.8%;
+    width: 31%;
+    height: 50%;
+    padding-top: 0%;
+    top: -5%;
+    letter-spacing: 0.7vw;
+    color: #000;
+  }
+
+  .header__top_language {
+    display: none;
+  }
+
+  .header__top_tick {
+  	display: none;
+  }
+
+  .header__card_girl {
+    display: none;
   }
 
   .rectangle {
     display: none;
   }
 
-  .tick {
-    display: grid;
-    position: absolute;
-    cursor: pointer;
-    width: 33px;
-    height: 18px;
-    left: 173px;
-    top: 490px;
-    z-index: 2;
-    color: black;
+  .burger__menu {
+    left: 49%;
+    height: 100%;
+    width: 20%;
   }
 
-  .header__menu {
-    display: flex;
+  .menu__btn {
+    top: 23%;
+    left: 36%;
+    width: 39%;
   }
 
   #menu__square {
-    display: flex;
-    height: 69px;
-    width: 70px;
-    left: 305px;
-    top: 71px;
-    border-radius: 0px;
+    position: relative;
+    left: 9%;
+    top: -64%;
+    height: 96%;
+    width: 91%;
     background: #000000;
     opacity: 0.05;
   }
-   
-  .menu__btn {
-    left:326px;
-    top: 108px;
-    width: 8%;
-    height: 3px;
+
+  .header__card {
+    width: 100vw;
+    height: 88vh;
+    left: 0%;
+    top: 0%;
+    background-image: url(./images/girl-smallerc.png);
+    background-repeat: no-repeat;
+    background-size: cover;
   }
 
-  .section__title {
-    position: absolute;
-    font-family: Montserratbold, sans-serif;
-    font-style: normal;
-    font-weight: bold;
-    font-size: 50px;
-    line-height: 51px;
-    color: #000000;
-    height: 103px;
-    width: 297px;
-    left: 6px;
-    top: 522px;
-    border-radius: 0px;
+  .header__card_title {
+    width: 84%;
+    height: 21.2%;
+    left: 6.8%;
+    top: 69.2%;
+    font-size: 13.5vw;
+    line-height: 8.5vh;
+    background: none;
   }
 
-  .scrol {
-	display: none;
+  .header__card_tick-mob {
+    display: flex;
+    width: 9vw;
+    height: 3vh;
+    left: -38%;
+    top: 92%;
+    background-image: none;
   }
 
-  .section__description {
-	display: none;
+  .header__card_description {
+  	display: none;
   }
 
-  .social {
-	display: none;
+  .header__card_next {
+    display: none;
   }
 
-  .section__next {
-	display: none;
+  .header__down {
+    display: none;
   }
 
 /*медия 2 секция моб*/
+
+  .main {
+    display: flex;
+  position: relative;
+  width: 100vw;
+  height: 100vh;
+  background-image: url(./images/pinkbg.png);
+  z-index: 3;
+
+  flex-direction: column;
+  background-size: 32vw 100vh;
+  background-repeat: no-repeat;
+}
+}
 /*
-  .items__pics_frontbag {
+  .main__pics_frontbag {
     width: 224px;
     height: 326px;
     left: 74px;
