@@ -712,7 +712,7 @@ body {
   height: 44%;
   left: 10.1%;
   top: 27%;
-  border: 0.1em solid #000000;
+  border: 0.1em solid #000;
   box-sizing: border-box;
   z-index: 1;
   background: transparent;
@@ -1024,7 +1024,7 @@ body {
     left: -2vw;
     top: 1.1vh;
     font-size: 1.8vw;
-    width: 3vw;  
+    width: 3vw;
   }
 
   .main__cart {
@@ -1421,7 +1421,7 @@ body {
     height: 12.7%;
     left: 10%;
     top: 34.2%;
-    border: 0.125em solid #000000;
+    border: 0.125em solid #000;
     font-weight: 500;
     font-size: 1.2em;
     line-height: 3em;
@@ -1444,7 +1444,7 @@ body {
   .footer {
     width: 100vw;
     height: 100vh;
-    background-color: #EBE3D8;
+    background-color: #ebe3d8;
     background-image: url(./images/rectangle3.png);
     background-repeat: no-repeat;
     background-position: 31.3% 0%;
@@ -1453,7 +1453,7 @@ body {
   }
 
   .footer__pics {
-  	position: relative;
+    position: relative;
     width: 94vw;
     height: 44vh;
     left: 3%;
@@ -1591,7 +1591,7 @@ body {
 
 /* mobile*/
 
-@media screen and (min-width: 0px) and (max-width: 600px) {
+@media screen and (min-width: 0) and (max-width: 600px) {
   .header {
     background-image: none;
   }
@@ -1694,7 +1694,7 @@ body {
 
   .main {
     height: 99vh;
-    left: 0vw;
+    left: 0;
     background-image: url(./images/pinkbg.png);
     z-index: -3;
     flex-direction: column;
