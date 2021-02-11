@@ -53,7 +53,6 @@ body {
   font-size: 1.3rem;
   text-align: right;
   color: #FFFFFF;
-  cursor: pointer;
   padding-top: 1vh;
 }
 
@@ -64,7 +63,7 @@ body {
   left: 17.5%;
   flex-direction: row;
   cursor: pointer;
-  padding-top: 1%
+  padding-top: 1%;
 }
 
 .header__top_tick-mob {
@@ -158,7 +157,7 @@ body {
   top: 9%;
 }
 
-.header__card_title { 
+.header__card_title {
   position: relative;
   text-align: inherit;
   width: 44%;
@@ -202,7 +201,7 @@ body {
   font-size: 1em;
   text-align: center;
   line-height: 4%;
-   top: 29%;
+  top: 29%;
 }
 
 .header__card_border {
@@ -211,7 +210,7 @@ body {
   height: 64%;
   left: 3%;
   top: 23%;
-  border: 0.09em solid #000000;
+  border: 0.09em solid #000;
   text-align: center;
   cursor: pointer;
   color: #000000;
@@ -292,7 +291,7 @@ body {
   top: -5%;
 }
 
-/*Здесь  2 секция*/
+/* Здесь  2 секция*/
 
 .main {
   display: flex;
@@ -468,7 +467,7 @@ body {
   height: 48%;
   left: 7%;
   top: 27%;
-  border: 0.1em solid #000000;
+  border: 0.1em solid #000;
   box-sizing: border-box;
   z-index: 1;
   background: transparent;
@@ -534,7 +533,7 @@ body {
   height: 7.7%;
   left: 35%;
   top: 20.2%;
-  border: 0.125em solid #000000;
+  border: 0.125em solid #000;
   box-sizing: border-box;
   z-index: 1;
   background: transparent;
@@ -574,7 +573,7 @@ body {
   cursor: pointer;
 }
 
-/*3 секция норм*/
+/* 3 секция норм*/
 
 .footer {
   display: flex;
@@ -583,7 +582,7 @@ body {
   height: 100vh;
   left: 0%;
   top: 50%;
-  background-color: #EBE3D8;
+  background-color: #ebe3d8;
   background-image: url(./images/webhero.png);
   background-repeat: no-repeat;
   background-position: 98.3% 98.2%;
@@ -637,7 +636,7 @@ body {
   height: 71%;
   left: 0%;
   top: 9%;
-  background: #FAE8E4;
+  background: #fae8e4;
   margin: 0;
   flex-direction: column;
 }
@@ -781,7 +780,6 @@ body {
   display: flex;
   justify-content: center;
   align-items: center;
-  display: flex;
   position: relative;
   width: 54%;
   height: 44%;
@@ -845,15 +843,13 @@ body {
   display: none;
 }
 
-
 @media only screen and (min-width: 1441px) and (max-width: 1920px) {
-  .footer__pics_stripe { display: none; } 
+  .footer__pics_stripe { display: none; }
 }
-
 
 @media only screen and (min-width: 801px) and (max-width: 1200px) {
   .header {
-	background-size: 40vw 100vh;
+    background-size: 40vw 100vh;
   }
 
   .header__top_language {
@@ -892,7 +888,7 @@ body {
   }
 
   .header__card_arrow {
-  	color: black;
+    color: black;
     cursor: pointer;
     text-decoration: none;
     width: 0%;
@@ -905,12 +901,12 @@ body {
     left: 5.6%;
   }
 
-  .header__down_vk{
-  	left: 9.6%;
+  .header__down_vk {
+    left: 9.6%;
   }
   
   .header__down_fb {
-  	left: 14%;
+    left: 14%;
   }
 
   .header__down_scrol {
@@ -958,7 +954,7 @@ body {
   }
 
   .main__button_gray {
-  	position: relative;
+    position: relative;
     width: 8%;
     height: 34%;
     left: 1.5%;
@@ -1028,7 +1024,8 @@ body {
     left: -2vw;
     top: 1.1vh;
     font-size: 1.8vw;
-    width: 3vw;  }
+    width: 3vw;  
+  }
 
   .main__cart {
     width: 51.5%;
@@ -1201,10 +1198,10 @@ body {
   }
 }
 
-/*промежуточная моб*/
+/* промежуточная моб*/
 
 @media only screen and (min-width: 601px) and (max-width: 800px) {
- .header {
+  .header {
     background-image: none;
   }
 
@@ -1213,7 +1210,7 @@ body {
   }
 
   .header__top_logo {
-  	font-size: 6vw;
+    font-size: 6vw;
     left: 6.8%;
     width: 31%;
     height: 50%;
@@ -1303,11 +1300,11 @@ body {
     display: none;
   }
 
-/*медия 2 секция моб*/
+  /* медия 2 секция моб*/
 
   .main {
     height: 99vh;
-    left: 0vw;
+    left: 0;
     background-image: url(./images/pinkbg.png);
     z-index: -3;
     flex-direction: column;
@@ -1442,7 +1439,7 @@ body {
   	display: none;
   }
 
-  /*3 секция мобильная*/
+  /* 3 секция мобильная*/
 
   .footer {
     width: 100vw;
@@ -1592,7 +1589,7 @@ body {
   }
 }
 
-/*mobile*/
+/* mobile*/
 
 @media screen and (min-width: 0px) and (max-width: 600px) {
   .header {
@@ -1604,7 +1601,7 @@ body {
   }
 
   .header__top_logo {
-  	font-size: 8vw;
+    font-size: 8vw;
     left: 6.8%;
     width: 31%;
     height: 50%;
@@ -1747,7 +1744,7 @@ body {
   }
 
   .main__text_subtitle {
-  	height: 7%;
+    height: 7%;
     width: 81%;
     top: 7.1%;
     left: 10.5%;
