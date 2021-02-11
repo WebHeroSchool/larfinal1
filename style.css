@@ -291,8 +291,6 @@ body {
   top: -5%;
 }
 
-/* Здесь  2 секция*/
-
 .main {
   display: flex;
   position: relative;
@@ -572,8 +570,6 @@ body {
   top: 2.5%;
   cursor: pointer;
 }
-
-/* 3 секция норм*/
 
 .footer {
   display: flex;
@@ -1198,8 +1194,6 @@ body {
   }
 }
 
-/* промежуточная моб*/
-
 @media only screen and (min-width: 601px) and (max-width: 800px) {
   .header {
     background-image: none;
@@ -1299,8 +1293,6 @@ body {
   .header__down {
     display: none;
   }
-
-  /* медия 2 секция моб*/
 
   .main {
     height: 99vh;
@@ -1438,8 +1430,6 @@ body {
   .main__arrow {
   	display: none;
   }
-
-  /* 3 секция мобильная*/
 
   .footer {
     width: 100vw;
@@ -1589,8 +1579,6 @@ body {
   }
 }
 
-/* mobile*/
-
 @media screen and (min-width: 0) and (max-width: 600px) {
   .header {
     background-image: none;
@@ -1689,8 +1677,6 @@ body {
   .header__down {
     display: none;
   }
-
-/*медия 2 секция моб*/
 
   .main {
     height: 99vh;
@@ -1811,7 +1797,7 @@ body {
     height: 12.7%;
     left: 10%;
     top: 29.2%;
-    border: 0.125em solid #000000;
+    border: 0.125em solid #000;
     font-weight: 500;
     font-size: 0.813em;
     line-height: 3em;
@@ -1834,7 +1820,7 @@ body {
   .footer {
     width: 100vw;
     height: 100vh;
-    background-color: #EBE3D8;
+    background-color: #ebe3d8;
     background-image: url(./images/rectangle3.png);
     background-repeat: no-repeat;
     background-position: 31.3% 0%;
@@ -1843,7 +1829,7 @@ body {
   }
 
   .footer__pics {
-  	position: relative;
+    position: relative;
     width: 94vw;
     height: 44vh;
     left: 3%;
