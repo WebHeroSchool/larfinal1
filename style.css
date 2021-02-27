@@ -132,7 +132,7 @@ body {
   display: none;
 }
 
-.menu__btn { 
+.menu__btn {
   display: block;
   align-items: center;
   position: relative;
@@ -175,7 +175,7 @@ body {
   visibility: visible;
   max-height: 200%;
   font-size: 2vw;
-  transition: .5s;
+  transition: 0.5s;
 }
 
 #menu__toggle:checked ~ .menu__btn > span::before {
@@ -1281,7 +1281,7 @@ body {
   }
 
   .burger {
-  	left: 55%;
+    left: 55%;
     height: 112%;
     width: 14%;
   }
@@ -1298,7 +1298,7 @@ body {
     left: 36%;
     width: 39%;
   }
-  
+
   .menu__box {
     z-index: 2;
     height: 149%;
@@ -1676,7 +1676,7 @@ body {
   }
 
   .burger {
-  	width: 19%;
+    width: 19%;
     height: 111%;
     background: #efefef;
     cursor: pointer;
